@@ -76,7 +76,7 @@ h2 {
 }
 
 
-.container-navigation {
+.container__navigation-first {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -88,7 +88,7 @@ nav {
   width: 96%;
 }
 
-li {
+.navigation > li {
   display: inline;
   font-size: (12.5em/16);
   text-transform: uppercase;
@@ -96,6 +96,7 @@ li {
   font-family: 'PT Sans', sans-serif;
   text-decoration: none;
   color: lighten(#000, 60%);
+  cursor: pointer;
 }
 
   .icon_home {
@@ -104,6 +105,7 @@ li {
 
   .slider > img {
     width: 100%;
+    height: 373px;
     position: relative;
   }
 
@@ -145,6 +147,7 @@ li {
 
 .slider__arrows > div > img {
   width: 19px;
+  cursor: pointer;
 }
 
 .slider-arrow-left {
@@ -152,3 +155,53 @@ right: 51%;
 position: absolute;
 top: -20px;
 }
+
+.container__navigation-second {
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.container__navigation-second > li {
+  display: inline;
+  font-size:(8em/16); 
+  margin-right: -3px;
+  cursor: pointer;
+ }
+
+.container__yellow {
+  color:$base-color; 
+}
+
+.container__product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container__product > img {
+  width: 25%;
+}
+
+.container__product-list {
+  width: 70%;
+}
+
+.container__product-list > p {
+  margin-top: 0;
+  font-weight: 600;
+  font-family: 'PT Sans', sans-serif;
+}
+
+input {
+  box-shadow: 3px 3px 1px 0px lighten(#000, 80%);
+  border-radius: 3px;
+  width: 100%;
+  color: black;
+  }
+
+  /*.container__checkbox {
+    background-color: white;
+    width: 5%;
+    border:1px solid #000;
+
+  }*/
