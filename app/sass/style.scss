@@ -133,3 +133,22 @@ li {
   font-size:(22em/16);
   margin-top: 4px;
 }
+
+.slider__arrows {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 488px;
+  width: 74%;
+  align-items: center;
+}
+
+.slider__arrows > div > img {
+  width: 19px;
+}
+
+.slider-arrow-left {
+right: 51%;
+position: absolute;
+top: -20px;
+}
