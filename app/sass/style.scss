@@ -1,3 +1,6 @@
+$base-color: #ffbb02;
+$small-size: (11em/16);
+
 body {
   padding: 0;
   margin: 0;
@@ -5,6 +8,11 @@ body {
   font-family: sans-serif;
 }
 
+header {
+  width: 100%;
+  height: 95px;
+  background-color: $base-color;
+}
 
 .head {
   width: 100%;
@@ -12,28 +20,20 @@ body {
   background-color: black; 
 }
 
-$base-color: #ffbb02;
-$small-size: (11em/16);
-
-header {
-    width: 100%;
-    height: 95px;
-	  background-color: $base-color;
-}
 
 .container {
-	width: 940px;
+	max-width: 940px;
 	margin: auto;
 }
 
-.container_top {
+.container__top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.container_left {
+.container__logo {
   display: flex;
   flex-direction: row;
   width: 30%;
@@ -41,19 +41,24 @@ header {
   align-items: center;
 
 }
-   
+
+.container__address {
+  font-size: $small-size;
+  margin-top: -7px;
+}
+
 h1 {
-background-image: url(/image/header/logos.png);
-background-repeat: no-repeat;
-background-size: 144px;
-text-transform: uppercase;
-font-size: (22em/16);
-height: 58px;
-width: 145px;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
+  background-image: url(/image/header/logos.png);
+  background-repeat: no-repeat;
+  background-size: 144px;
+  text-transform: uppercase;
+  font-size: (22em/16);
+  height: 58px;
+  width: 145px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 h2 {
@@ -61,6 +66,7 @@ h2 {
   text-transform: uppercase;
   line-height: 23px;
   font-family: 'PT Sans', sans-serif;
+  margin-left: 5%;
 }
 
 .number {
@@ -69,17 +75,17 @@ h2 {
   margin-top: -10px;
 }
 
-.container_right {
-  font-size: $small-size;
-  margin-top: -7px;
-}
 
-.container-one {
+.container-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 40px;
+}
+
+nav {
+  width: 96%;
 }
 
 li {
@@ -92,15 +98,11 @@ li {
 
 a {
   text-decoration: none;
-  color: grey;
+  color: lighten(#000, 60%);
 }
 
 .icon_home {
   width: 35px;
-}
-
-nav {
-  width: 96%;
 }
 
 .slider > img {
@@ -108,5 +110,5 @@ nav {
 }
 
 .price {
-  
+
 }
