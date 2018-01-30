@@ -94,21 +94,42 @@ li {
   text-transform: uppercase;
   margin-right: 5%;
   font-family: 'PT Sans', sans-serif;
-}
-
-a {
   text-decoration: none;
   color: lighten(#000, 60%);
 }
 
-.icon_home {
-  width: 35px;
+  .icon_home {
+    width: 35px;
+  }
+
+  .slider > img {
+    width: 100%;
+    position: relative;
+  }
+
+  .slider__price {
+   position: absolute;
+   top: 142px;
+   right: 40%; 
+   font-size: $small-size;
+   text-transform: uppercase;
+   line-height: 23px;
+   font-family: 'PT Sans', sans-serif;
+   font-weight: bold;
+ }
+
+ span {
+  font-size:(59em/16);
+  color: white;
+  position: absolute;
+  top: 45px;
+  right: -49px; 
 }
 
-.slider > img {
-  width: 100%;
-}
-
-.price {
-
+.slider__string {
+  position: absolute;
+  right: -49px;
+  text-transform: none;
+  font-size:(22em/16);
+  margin-top: 4px;
 }

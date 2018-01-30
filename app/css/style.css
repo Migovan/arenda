@@ -75,9 +75,7 @@ li {
   font-size: 0.78125em;
   text-transform: uppercase;
   margin-right: 5%;
-  font-family: 'PT Sans', sans-serif; }
-
-a {
+  font-family: 'PT Sans', sans-serif;
   text-decoration: none;
   color: #999999; }
 
@@ -85,4 +83,29 @@ a {
   width: 35px; }
 
 .slider > img {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
+
+.slider__price {
+  position: absolute;
+  top: 142px;
+  right: 40%;
+  font-size: 0.6875em;
+  text-transform: uppercase;
+  line-height: 23px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold; }
+
+span {
+  font-size: 3.6875em;
+  color: white;
+  position: absolute;
+  top: 45px;
+  right: -49px; }
+
+.slider__string {
+  position: absolute;
+  right: -49px;
+  text-transform: none;
+  font-size: 1.375em;
+  margin-top: 4px; }
