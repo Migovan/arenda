@@ -1,93 +1,92 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-    <meta charset = "UTF-8">
-    <title>Arenda</title>
-    <link rel = "stylesheet" href="css/style.css"> 
-    <link href = "https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+  <meta charset = "UTF-8">
+  <title>Arenda</title>
+  <link rel = "stylesheet" href="css/style.css"> 
+  <link href = "https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+
 </head>
 <body>
-    <header>
-        <div class = "head"></div>
-        <div class = "container">
-            <div class = "container__top">
-                <div class = "container__logo">
-                    <h1>аренда</h1>
-                    <h2>услуги строительной <br> 
-                    техники</h2>
-                </div>
-                <div class = "container__address">
-                    <p>г. Екатеринбург ул.Маяковского, 25</p>
-                    <p class = "number">+7 (343) 22-20-17</p>
-                </div>
-            </div>
+  <header>
+    <div class = "top-line"></div>
+    <div class = "container">
+      <div class = "head">
+        <div class = "head__logo">
+          <h1>аренда</h1>
+          <h2>услуги строительной <br> 
+          техники</h2>
         </div>
-    </header>
-    <div class="container">
-       <div class = "container__navigation-first">
-        <img class = "icon_home" src="/image/header/icon_home.png">
-        <nav>
-            <ul class="navigation">
-                <li><a href = "#"></a>каталог техники</li>
-                <li><a href = "#"></a>услуги</li>
-                <li><a href = "#"></a>выполненные работы</li>
-                <li><a href = "#"></a>о компании</li>
-                <li><a href = "#"></a>контакты</li>
-            </ul>
-        </nav>
+        <div class = "head__address">
+          <p>г. Екатеринбург ул.Маяковского, 25</p>
+          <p class = "head__number">+7 (343) 22-20-17</p>
+        </div>
+      </div>
     </div>
+  </header>
+  <div class="container">
+   <div class = "navigation-first">
+    <img src="/image/header/icon_home.png">
+    <nav>
+      <ul>
+        <li><a href = "#"></a>каталог техники</li>
+        <li><a href = "#"></a>услуги</li>
+        <li><a href = "#"></a>выполненные работы</li>
+        <li><a href = "#"></a>о компании</li>
+        <li><a href = "#"></a>контакты</li>
+      </ul>
+    </nav>
+  </div>
 </div>
-<div class = "slider">
-   <img src = "/image/slider/main_excavator.png">
-   <div class="container">
-    <div class="slider__price">
-        <p>професcиональня техника<br>
-         в аренду от <span>15000</span></p>
-         <p class="slider__string">руб./сутки</p>
-     </div>
-     <div class="slider__arrows">
-         <div class="slider-arrow-left"><img src="/image/slider/arrow_left.png"></div>
-         <div><img src="/image/slider/arrow_right.png"></div>
-     </div>
- </div>
-</div>
+<img class = "slider-img" src = "/image/slider/main_excavator.png">
 <div class="container">
-    <ul class="container__navigation-second">
-        <li class="container__yellow"><a href = "#"></a>Галвная</li>
-        <li>/</li>
-        <li class="container__yellow"><a href = "#"></a>Каталог</li>
-        <li>/</li> 
-        <li><a href = "#"></a>Название товара</li>
-    </ul>
-
-    <div class="container__product">
-        <img src="/image/product/excavator.png">
-        <div class="container__product-list">
-            <p>JCB 4CX Super</p>
-            <input class="container__product-input-first" type="text">
-             <div class="container__product-characteristics">
-            <div class="container__product-characteristic">
-                <img src="/image/product/checkbox.png">
-                <p>Характеристика 1</p>
-            </div>
-            <div class="container__product-characteristic">
-                <img src="/image/product/checkbox.png">
-                <p>Характеристика 2</p>
-            </div>
-            <div class="container__product-characteristic">
-                <img src="/image/product/checkbox.png">
-                <p>Характеристика 3</p>
-            </div>
-            </div>
-            <input class="container__product-input-second" type="text">
-            <div class="container__product-price">
-                <p>125.000 Р.</p>
-                <!-- <p class="container__product-button">заказать</p> -->
-               <!--  <input type="button" value="заказать"> -->
-            </div>
+  <div class="price">
+    <p>професcиональня техника<br>
+     в аренду от <span>15000</span></p>
+     <p class="price__string">руб./сутки</p>
+   </div>
+   <div class="arrows">
+     <div class="arrow-left"><img src="/image/slider/arrow_left.png"></div>
+     <div><img src="/image/slider/arrow_right.png"></div>
+   </div>
+ </div>
+ <div class="container">
+  <ul class="navigation-second">
+    <li class="yellow"><a href = "#"></a>Галвная</li>
+    <li>/</li>
+    <li class="yellow"><a href = "#"></a>Каталог</li>
+    <li>/</li> 
+    <li><a href = "#"></a>Название товара</li>
+  </ul>
+  <div class="product">
+    <img src="/image/product/excavator.png">
+    <div class="product__list">
+      <p>JCB 4CX Super</p>
+      <input class="product__input-first" type="text">
+      <div class="product__characteristics">
+        <div class="product__characteristic">
+          <img src="/image/product/checkbox.png">
+          <p>Характеристика 1</p>
         </div>
+        <div class="product__characteristic">
+          <img src="/image/product/checkbox.png">
+          <p>Характеристика 2</p>
+        </div>
+        <div class="product__characteristic">
+          <img src="/image/product/checkbox.png">
+          <p>Характеристика 3</p>
+        </div>
+      </div>
+      <input class="product__input-second" type="text">
+      <div class="product__price">
+        <p>125.00 Р.</p>
+        <input type="button" value="заказать">
+      </div>
     </div>
+  </div>
 </div>
 </body>
 </html>

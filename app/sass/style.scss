@@ -15,7 +15,7 @@ header {
   background-color: $base-color;
 }
 
-.head {
+.top-line {
   width: 100%;
   height: 9px;
   background-color: black; 
@@ -27,14 +27,14 @@ header {
 	margin: auto;
 }
 
-.container__top {
+.head {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.container__logo {
+.head__logo {
   display: flex;
   flex-direction: row;
   width: 30%;
@@ -43,7 +43,7 @@ header {
 
 }
 
-.container__address {
+.head__address {
   font-size: $small-size;
   margin-top: -7px;
 }
@@ -70,26 +70,27 @@ h2 {
   margin-left: 5%;
 }
 
-.number {
+.head__number {
   margin-left: 60%;
   font-family: $base-font;
   margin-top: -10px;
 }
 
 
-.container__navigation-first {
+.navigation-first {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 40px;
+  img {
+     width: 35px;
+  }
 }
 
 nav {
   width: 96%;
-}
-
-.navigation > li {
+  li {
   display: inline;
   font-size: (12.5em/16);
   text-transform: uppercase;
@@ -99,18 +100,15 @@ nav {
   color: lighten(#000, 60%);
   cursor: pointer;
 }
-
-.icon_home {
-  width: 35px;
 }
 
-.slider > img {
+.slider-img {
   width: 100%;
   height: 373px;
   position: relative;
 }
 
-.slider__price {
+.price {
  position: absolute;
  top: 142px;
  right: 40%; 
@@ -129,7 +127,7 @@ span {
   right: -49px; 
 }
 
-.slider__string {
+.price__string {
   position: absolute;
   right: -49px;
   text-transform: none;
@@ -137,65 +135,62 @@ span {
   margin-top: 4px;
 }
 
-.slider__arrows {
+.arrows {
   position: absolute;
   display: flex;
   flex-direction: column;
   top: 488px;
   width: 74%;
   align-items: center;
-}
-
-.slider__arrows > div > img {
+  div > img {
   width: 19px;
   cursor: pointer;
 }
+}
 
-.slider-arrow-left {
+.arrow-left {
   right: 51%;
   position: absolute;
   top: -20px;
 }
 
-.container__navigation-second {
+.navigation-second {
   padding: 0;
   margin-bottom: 40px;
-}
-
-.container__navigation-second > li {
+  li {
   display: inline;
   font-size:(8em/16); 
   margin-right: -3px;
   cursor: pointer;
 }
+}
 
-.container__yellow {
+.yellow {
   color:$base-color; 
 }
 
-.container__product {
+.product {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.container__product > img {
+.product > img {
   width: 255px;
   height: 255px;
 }
 
-.container__product-list {
+.product__list {
   margin-left: 3%;
   width: 70%;
+  p {
+    margin-top: -4px;
+    font-weight: 600;
+    font-family: $base-font;
+  }
 }
 
-.container__product-list > p {
-  margin-top: -4px;
-  font-weight: 600;
-  font-family: $base-font;
-}
-
-.container__product-input-first {
+.product__input-first {
   box-shadow: 3px 3px 1px 0px lighten(#000, 80%);
   border-radius: 3px;
   width: 100%;
@@ -204,10 +199,11 @@ span {
   background-repeat: no-repeat; 
   background-position: 625px; 
   margin-top: 20px;
+  border: solid 1px #cccccc;
   
 }
 
-.container__product-input-second {
+.product__input-second {
   box-shadow: 3px 3px 1px 0px lighten(#000, 80%);
   border-radius: 3px;
   width: 100%;
@@ -216,30 +212,27 @@ span {
   background-repeat: no-repeat; 
   background-position: 625px; 
   margin-top: 20px;
+  border: solid 1px #cccccc;
 }
 
 
-.container__product-characteristic {
+.product__characteristic {
  display: flex;
  flex-direction: row;
  justify-content: space-between;
  align-items: center;
  width: 22%;
-}
-
-
-.container__product-characteristic  > img {
-  width: 25px;
-}
-
-
-.container__product-characteristic > p {
+ p {
   font-size: (13em/16);
   font-family: $base-font;
   margin: 0; 
 }
+img {
+  width: 25px;
+}
+}
 
-.container__product-characteristics {
+.product__characteristics {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -247,32 +240,22 @@ span {
   height: 100px;
 }
 
-.container_arrow-up {
+.arrow-up {
   float: right;
 }
 
-.container__product-price {
+.product__price {
   display: flex;
   flex-direction: row;
-}
-
-.container__product-price > p {
+p {
   font-family: $base-font;
   font-size: (15em/16);
   font-weight: bold;
 }
-
-.container__product-price > input {
+input {
   background: #ffbb02;
   width: 40%;
   justify-content: space-between;
 }
-
-.container__product-button {
-  background: $base-color;
-  color: black;
-  border-radius: 7px;
-  height: 37px;
-  width: 112px;
-  text-decoration: underline;
 }
+
