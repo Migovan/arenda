@@ -23,8 +23,8 @@ header {
 
 
 .container {
-	max-width: 940px;
-	margin: auto;
+  max-width: 940px;
+  margin: auto;
 }
 
 .head {
@@ -84,22 +84,22 @@ h2 {
   align-items: center;
   height: 40px;
   img {
-     width: 35px;
-  }
+   width: 35px;
+ }
 }
 
 nav {
   width: 96%;
   li {
-  display: inline;
-  font-size: (12.5em/16);
-  text-transform: uppercase;
-  margin-right: 5%;
-  font-family: $base-font;
-  text-decoration: none;
-  color: lighten(#000, 60%);
-  cursor: pointer;
-}
+    display: inline;
+    font-size: (12.5em/16);
+    text-transform: uppercase;
+    margin-right: 5%;
+    font-family: $base-font;
+    text-decoration: none;
+    color: lighten(#000, 60%);
+    cursor: pointer;
+  }
 }
 
 .slider-img {
@@ -109,14 +109,14 @@ nav {
 }
 
 .price {
- position: absolute;
- top: 142px;
- right: 40%; 
- font-size: $small-size;
- text-transform: uppercase;
- line-height: 23px;
- font-family: $base-font;
- font-weight: bold;
+  position: absolute;
+  top: 142px;
+  right: 40%; 
+  font-size: $small-size;
+  text-transform: uppercase;
+  line-height: 23px;
+  font-family: $base-font;
+  font-weight: bold;
 }
 
 span {
@@ -143,9 +143,9 @@ span {
   width: 74%;
   align-items: center;
   div > img {
-  width: 19px;
-  cursor: pointer;
-}
+    width: 19px;
+    cursor: pointer;
+  }
 }
 
 .arrow-left {
@@ -158,11 +158,11 @@ span {
   padding: 0;
   margin-bottom: 40px;
   li {
-  display: inline;
-  font-size:(8em/16); 
-  margin-right: -3px;
-  cursor: pointer;
-}
+    display: inline;
+    font-size:(8em/16); 
+    margin-right: -3px;
+    cursor: pointer;
+  }
 }
 
 .yellow {
@@ -200,7 +200,7 @@ span {
   background-position: 625px; 
   margin-top: 20px;
   border: solid 1px #cccccc;
-  
+
 }
 
 .product__input-second {
@@ -217,19 +217,19 @@ span {
 
 
 .product__characteristic {
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: center;
- width: 22%;
- p {
-  font-size: (13em/16);
-  font-family: $base-font;
-  margin: 0; 
-}
-img {
-  width: 25px;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 22%;
+  p {
+    font-size: (13em/16);
+    font-family: $base-font;
+    margin: 0; 
+  }
+  img {
+    width: 25px;
+  }
 }
 
 .product__characteristics {
@@ -247,15 +247,81 @@ img {
 .product__price {
   display: flex;
   flex-direction: row;
-p {
-  font-family: $base-font;
-  font-size: (15em/16);
-  font-weight: bold;
-}
-input {
-  background: #ffbb02;
+  justify-content: space-between; 
   width: 40%;
-  justify-content: space-between;
-}
+  align-items: center;
+  p {
+    font-family: $base-font;
+    font-size: (21em/16);
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  button {
+    width: 126px;
+    height: 33px;
+    text-decoration: underline;
+    color: black;
+    font-family: $base-font;;
+    text-transform: uppercase; 
+    font-size: $small-size;
+    box-shadow: 2px 5px 5px 0px lighten(#000, 80%);
+    border-radius: 5px;
+    background: rgb(252,234,187);
+    background: -moz-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(248,181,0,1) 0%, rgba(252,205,77,1) 100%, rgba(251,223,147,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%,rgba(248,181,0,1) 0%,rgba(252,205,77,1) 100%,rgba(251,223,147,1) 100%);
+    background: linear-gradient(to right, rgba(252,234,187,1) 0%,rgba(248,181,0,1) 0%,rgba(252,205,77,1) 100%,rgba(251,223,147,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=1 );
+  }
 }
 
+hr {
+  margin-top: 25px;
+}
+
+h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: $base-font;
+  margin-top: 50px;
+}
+
+.services {
+  width: 100%;
+  background-color: $base-color; 
+  img {
+    width: 150px;
+    margin-top: 50px;
+margin-bottom: 50px;
+  }
+  p {
+   font-size: (13em/16);
+   line-height: 25px;
+ } 
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: (18em/16);
+  margin-top: -9px;
+  margin-top: 10px;
+}
+
+
+.services__content {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ font-family: $base-font;
+ width: 112%
+}
+
+.services__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%;
+}
