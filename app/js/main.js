@@ -1,8 +1,8 @@
-$(function sl(){ $('.slider').slick(); });﻿
+$(document).ready( function() {
+	$('.slider').slick({
+		prevArrow: '.arrow-left',
+		nextArrow: '.arrow-right'
+	});
+})
 
 
-// $(function(){
-//     $(".link").click(function() {
-//          console.log('a');
-//     });
-// });

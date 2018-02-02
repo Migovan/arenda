@@ -253,6 +253,7 @@ span {
     font-size: $small-size;
     box-shadow: 2px 5px 5px 0px lighten(#000, 80%);
     border-radius: 5px;
+    border: inherit;
     background: rgb(252,234,187);
     background: -moz-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(248,181,0,1) 0%, rgba(252,205,77,1) 100%, rgba(251,223,147,1) 100%);
     background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%,rgba(248,181,0,1) 0%,rgba(252,205,77,1) 100%,rgba(251,223,147,1) 100%);
