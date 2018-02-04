@@ -1,7 +1,7 @@
 $(document).ready( function() {
 	$('.slider').slick({
-		prevArrow: '.arrow-left',
-		nextArrow: '.arrow-right'
+		prevArrow: '.arrow__left',
+		nextArrow: '.arrow__right'
 	});
 })
 

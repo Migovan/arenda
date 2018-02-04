@@ -58,7 +58,7 @@ h2 {
 }
 
 .head__number {
-  margin-left: 60%;
+  float: right;
   font-family: $base-font;
   margin-top: -10px;
 }
@@ -95,6 +95,35 @@ nav {
   position: relative;
 }
 
+.arrow {
+  position: relative;
+}
+
+.arrow__container {
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  div > img {
+    width: 19px;
+    cursor: pointer;
+  }
+}
+
+.arrow__left {
+  right: 50%;
+  position: absolute;
+  top: -20px;
+  width: 19px;
+    cursor: pointer;
+}
+
+.arrow__right {
+  left: 50%;
+  position: absolute;
+  width: 19px;
+    cursor: pointer;
+}
+
 .price {
   position: absolute;
   top: 142px;
@@ -122,24 +151,6 @@ span {
   margin-top: 4px;
 }
 
-.arrows {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 488px;
-  width: 74%;
-  align-items: center;
-  div > img {
-    width: 19px;
-    cursor: pointer;
-  }
-}
-
-.arrow-left {
-  right: 51%;
-  position: absolute;
-  top: -20px;
-}
 
 .navigation-second {
   padding: 0;
@@ -186,7 +197,6 @@ span {
   box-shadow: 3px 3px 7px 0px lighten(#000, 80%);
   font-family: $base-font;
   p {
-    border-bottom: 1px solid #ddd;
     cursor: pointer;
     margin: 5.5px 0px 4px 0px;
     padding-left: 8px;
@@ -194,7 +204,6 @@ span {
   }
   article {
     display: none;
-    border-bottom: 1px solid #ddd;
     margin-left: 8px;
     font-family: $base-font;
   }
@@ -204,6 +213,7 @@ span {
   background-image: url(/image/product/arrow-down.png);   
   background-repeat: no-repeat;
   background-position: 623px top;
+  border-bottom: 1px solid #ddd;
 }
 
 .arrow-up {
@@ -211,38 +221,13 @@ span {
   background-repeat: no-repeat;
   background-position: 623px top;
 }
-/*// .product__input-first {
-//   box-shadow: 3px 3px 1px 0px lighten(#000, 80%);
-//   border-radius: 3px;
-//   width: 100%;
-//   height: 27px;
-//   background-image: url(/image/product/arrow_up.png);   
-//   background-repeat: no-repeat; 
-//   background-position: 625px; 
-//   margin-top: 20px;
-//   border: solid 1px #cccccc;
-
-// }
-
-// .product__input-second {
-//   box-shadow: 3px 3px 1px 0px lighten(#000, 80%);
-//   border-radius: 3px;
-//   width: 100%;
-//   height: 27px;
-//   background-image: url(/image/product/arrow-down.png);   
-//   background-repeat: no-repeat; 
-//   background-position: 625px; 
-//   margin-top: 20px;
-//   border: solid 1px #cccccc;
-// }*/
-
 
 .product__characteristic {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 22%;
+  width: 23%;
   p {
     font-size: (13em/16);
     font-family: $base-font;
@@ -256,9 +241,8 @@ span {
 .product__characteristics {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-top: 30px;
-  height: 100px;
+  justify-content: space-around;
+  height: 115px;
 }
 
 .arrow-up {

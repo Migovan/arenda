@@ -23,6 +23,6 @@ gulp.task('browser-sync', function () {
   });
 });
 
-gulp.task('watch', gulp.parallel('browser-sync', function() {
+gulp.task('watch', gulp.parallel('browser-sync', 'sass', function() {
   gulp.watch(sassPath, gulp.series('sass'))
 }))
