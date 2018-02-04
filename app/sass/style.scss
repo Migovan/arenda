@@ -91,7 +91,7 @@ nav {
 
 .slider-img {
   width: 100%;
-  height: 373px;
+  height: 370px;
   position: relative;
 }
 
@@ -114,14 +114,14 @@ nav {
   position: absolute;
   top: -20px;
   width: 19px;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .arrow__right {
   left: 50%;
   position: absolute;
   width: 19px;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .price {
@@ -205,7 +205,7 @@ span {
   article {
     display: none;
     margin-left: 8px;
-    font-family: $base-font;
+    
   }
 }
 
@@ -227,11 +227,13 @@ span {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 23%;
+  width: 21%;
   p {
     font-size: (13em/16);
     font-family: $base-font;
     margin: 0; 
+    height: 18px;
+    font-weight: 200;
   }
   img {
     width: 25px;
@@ -243,10 +245,6 @@ span {
   flex-direction: column;
   justify-content: space-around;
   height: 115px;
-}
-
-.arrow-up {
-  float: right;
 }
 
 .product__price {
@@ -321,7 +319,10 @@ h4 {
  justify-content: space-between;
  align-items: center;
  font-family: $base-font;
- width: 112%
+ width: 112%;
+ article {
+  height: 170px;
+}
 }
 
 .services__box {
@@ -330,4 +331,13 @@ h4 {
   justify-content: space-between;
   align-items: center;
   width: 93%;
+}
+
+
+.todo {
+  height: 250px
+}
+
+#map { 
+  height: 400px;
 }

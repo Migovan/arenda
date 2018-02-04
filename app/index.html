@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css"> 
   <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css"> 
   <link rel="stylesheet" href="css/style.css"> 
-
 </head>
 <body>
   <header>
@@ -41,7 +40,6 @@
     </nav>
   </div>
 </div>
-
 <div class="slider">
   <div>
     <img class="slider-img" src="/image/slider/main_excavator.png">
@@ -50,7 +48,6 @@
     <img class="slider-img" src="/image/slider/main_excavator.png">
   </div>
 </div>
-
 <div class="arrow">
  <div class="arrow__container">
   <div class="arrow__left">
@@ -61,14 +58,12 @@
   </div>
 </div>
 </div>
-
 <div class="container">
   <div class="price">
     <p>професcиональня техника<br>
      в аренду от <span>15000</span></p>
      <p class="price__string">руб./сутки</p>
    </div>
-
  </div>
  <div class="container">
   <ul class="navigation-second">
@@ -83,32 +78,48 @@
     <div class="product__list">
       <p>JCB 4CX Super</p>
       <div class="accordion">
-        <p class="arrow-down">Характеристика</p>
+        <p class="arrow-down">Характеристики</p>
         <article>
-           <div class="product__characteristics">
-        <div class="product__characteristic">
-          <img src="/image/product/checkbox.png">
-          <p>Характеристика 1</p>
+         <div class="product__characteristics">
+          <div class="product__characteristic">
+            <img src="/image/product/checkbox.png">
+            <p>Характеристика 1</p>
+          </div>
+          <div class="product__characteristic">
+            <img src="/image/product/checkbox.png">
+            <p>Характеристика 2</p>
+          </div>
+          <div class="product__characteristic">
+            <img src="/image/product/checkbox.png">
+            <p>Характеристика 3</p>
+          </div>
         </div>
-        <div class="product__characteristic">
-          <img src="/image/product/checkbox.png">
-          <p>Характеристика 2</p>
-        </div>
-        <div class="product__characteristic">
-          <img src="/image/product/checkbox.png">
-          <p>Характеристика 3</p>
-        </div>
-      </div>
       </article>
-      </div>
-     
-      <div class="product__price">
-        <p>125.000 Р.</p>
-        <button>заказать</button>
-      </div>
+    </div>
+    <div class="accordion">
+      <p class="arrow-down">Информация</p>
+      <article>
+        И скучно и грустно, и некому руку подать<br>
+        В минуту душевной невзгоды...<br>
+        Желанья!.. что пользы напрасно и вечно желать?..<br>
+        А годы проходят — все лучшие годы!<br>
+        Любить... но кого же?.. на время — не стоит труда,<br>
+        А вечно любить невозможно.<br>
+        В себя ли заглянешь? — там прошлого нет и следа:<br>
+        И радость, и муки, и все там ничтожно...<br>
+        Что страсти? — ведь рано иль поздно их сладкий недуг<br>
+        Исчезнет при слове рассудка;<br>
+        И жизнь, как посмотришь с холодным вниманьем вокруг, —<br>
+        Такая пустая и глупая шутка...<br>
+      </article>
+    </div>
+    <div class="product__price">
+      <p>125.000 Р.</p>
+      <button>заказать</button>
     </div>
   </div>
-  <hr noshade>
+</div>
+<hr noshade>
 </div>
 <h3>услуги</h3>
 <div class="services">
@@ -160,9 +171,21 @@
     </div>
   </div>
 </div>
+<div class="todo">
+  <div class="container">
+  </div>
+</div>
+<div id="map"></div>
 </body>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/accordion.js"></script>
+<script src="js/google-map.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC72tHyYGapT2IUGb6HDtFCkUKKgfvFv4E&callback=initMap">
+</script>
+
 </html>
+
+
