@@ -240,6 +240,22 @@ span {
   }
 }
 
+.product__checkbox {
+  background-image: url(/image/product/checkbox.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  background-size: 25px;
+}
+
+.product__checkbox-black {
+  background-image: url(/image/product/checkbox-black.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  background-size: 25px;
+}
+
 .product__characteristics {
   display: flex;
   flex-direction: column;
@@ -344,25 +360,8 @@ h4 {
 
 footer {
   width: 100%;
-  height: 90px;
+  height: 100px;
   background-color: #000;
-}
-
-.logo-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 45%;
-  height: 90px;
-  li {
-    display:inline;
-    color: white;
-    font-size: (10em/16);
-    font-family: MyryadPro, sans;
-    margin-right: 25px;
-    line-height: 27px;
-  }
 }
 
 .foot {
@@ -371,13 +370,36 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 100px;
 }
 
-.itex-logo {
+.foot__logo-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+  height: 90px;
+  li {
+    display:inline;
+    font-size: (10em/16);
+    font-family: MyryadPro, sans;
+    margin-right: 25px;
+    line-height: 27px;
+    text-decoration: none;
+    color: lighten(#000, 60%);
+    cursor: pointer;
+  }
+}
+
+
+.foot__itex-logo {
   display: flex;
   flex-direction: column;
   p {
     color: white;
+    font-size: (10em/16);
+    font-family: MyryadPro, sans;
   }
   div {
     display: flex;
@@ -385,4 +407,8 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.foot__address {
+  text-decoration: underline;
 }
