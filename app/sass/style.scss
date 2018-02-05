@@ -249,7 +249,7 @@ span {
 }
 
 .product__checkbox-black {
-  background-image: url(/image/product/checkbox-black.png);
+  background-image: url(/image/product/selected-box.png);
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
@@ -280,7 +280,7 @@ span {
     height: 33px;
     text-decoration: underline;
     color: black;
-    font-family: $base-font;;
+    font-family: $base-font;
     text-transform: uppercase; 
     font-size: $small-size;
     box-shadow: 2px 5px 5px 0px lighten(#000, 80%);
@@ -349,13 +349,66 @@ h4 {
   width: 93%;
 }
 
+.container__todo{
+  height: 191px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 35px;
+  margin-bottom: 35px;
+
+}
 
 .todo {
-  height: 300px
+  width: 30%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  h3 {
+    justify-content: flex-start;
+    margin: 0;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p {
+    font-family: $base-font;
+    font-weight: bold;
+    font-size: (17em/16);
+  }
+}
+
+.todo__task {
+  width: 70%;
+  height: 18px;
+  div {
+    width: 22%;
+  }
+}
+
+.todo__input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 68%;
+  input {
+    width: 85%;
+  }
+  div {
+    width: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 #map { 
-  height: 400px;
+  height: 450px;
 }
 
 footer {

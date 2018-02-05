@@ -171,26 +171,50 @@
     </div>
   </div>
 </div>
-<div class="todo">
-  <div class="container">
+<div class="container">
+  <div class="container__todo">
+    <div class="todo">
+      <h3>заголовок</h3>
+      <div class="todo__task">
+        <p>1. Задача 1</p>
+        <div>
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="todo__task">
+        <p>2. Задача 2</p>
+        <div>
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <div class="todo__input">
+      <input type="text">
+      <div>
+        <i class="fa fa-check" aria-hidden="true"></i>
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+    </div>
   </div>
 </div>
 <div id="map"></div>
 <footer>
   <div class="container">
-     <div class="foot">
+   <div class="foot">
     <div class="foot__logo-navigation">
       <div><img src="/image/footer/logo-yellow.png"></div>
       <div>
-      <ul>
-        <li><a href="#"></a>Главная</li>
-        <li><a href="#"></a>Каталог техники</li>
-        <li><a href="#"></a>Услуги</li>
-        <li><a href="#"></a>Выполненные работы</li>
-        <li><a href="#"></a>О компании</li>
-        <li><a href="#"></a>Контакты</li>
-      </ul>
-    </div>
+        <ul>
+          <li><a href="#"></a>Главная</li>
+          <li><a href="#"></a>Каталог техники</li>
+          <li><a href="#"></a>Услуги</li>
+          <li><a href="#"></a>Выполненные работы</li>
+          <li><a href="#"></a>О компании</li>
+          <li><a href="#"></a>Контакты</li>
+        </ul>
+      </div>
     </div>
     <div class="foot__itex-logo">
       <p>&#169;Айтекс start 2016</p>
@@ -199,8 +223,8 @@
         <p class="foot__address">itex.star.ru</p>
       </div>
     </div>
-   </div>
   </div>
+</div>
 </footer>
 </body>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
@@ -212,7 +236,6 @@
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC72tHyYGapT2IUGb6HDtFCkUKKgfvFv4E&callback=initMap">
 </script>
-
 </html>
 
 
